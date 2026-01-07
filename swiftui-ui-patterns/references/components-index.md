@@ -7,7 +7,7 @@ Use this file to find component-specific guidance. Each entry lists when to use 
 - TabView: `references/tabview.md` — Use when building a tab-based app or any tabbed feature set.
 - NavigationStack: `references/navigationstack.md` — Use when you need push navigation and programmatic routing, especially per-tab history.
 - Sheets and modal routing: `references/sheets.md` — Use when you want centralized, enum-driven sheet presentation.
-- App scaffolding wiring: `references/app-scaffolding-wiring.md` — Use to wire TabView + NavigationStack + sheets at the root.
+- App wiring and dependency graph: `references/app-wiring.md` — Use to wire TabView + NavigationStack + sheets at the root and install global dependencies.
 - Form and Settings: `references/form.md` — Use for settings, grouped inputs, and structured data entry.
 - Split views and columns: `references/split-views.md` — Use for iPad/macOS multi-column layouts or custom secondary columns.
 - List and Section: `references/list.md` — Use for feed-style content and settings rows.
