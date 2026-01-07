@@ -97,6 +97,22 @@ Helps adopt the native Liquid Glass API in SwiftUI interfaces, ensuring correct 
 
 ---
 
+### 🧩 SwiftUI UI Patterns
+
+**Purpose**: Best practices and example-driven guidance for building SwiftUI views and components.
+
+Provides a structured approach to view composition, state ownership, and component selection, with references to common patterns and scaffolding guidance.
+
+**Key Features**:
+- Component references for TabView, NavigationStack, Sheets, and more
+- Scaffolding guidance for new app wiring
+- Emphasis on SwiftUI-native state and composition
+- Guidance for consistent, maintainable view structure
+
+**Use When**: You need help designing SwiftUI UI, composing screens, or selecting component patterns.
+
+---
+
 ### 🔧 SwiftUI View Refactor
 
 **Purpose**: Refactor SwiftUI view files for consistent structure and dependency patterns.
@@ -127,6 +143,22 @@ Focuses on identifying common SwiftUI performance pitfalls in view code and data
 - Offers a user-run Instruments workflow when needed
 
 **Use When**: You need to diagnose SwiftUI performance issues, improve view/update efficiency, or get guidance on profiling with Instruments.
+
+---
+
+### 🧰 macOS SwiftPM App Packaging (No Xcode)
+
+**Purpose**: Scaffold, build, and package SwiftPM-based macOS apps without an Xcode project.
+
+Bootstraps a minimal SwiftPM macOS app folder, then uses shell scripts to build, assemble the .app bundle, sign, and optionally notarize or generate Sparkle appcasts.
+
+**Key Features**:
+- Bootstrap template for a SwiftPM macOS app layout
+- Packaging script to assemble a .app bundle without Xcode
+- Dev loop script to package and launch the app
+- Optional release signing/notarization and appcast tooling
+
+**Use When**: You need a from-scratch macOS app layout and packaging flow without Xcode.
 
 ---
 
