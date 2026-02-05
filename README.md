@@ -8,10 +8,52 @@ A collection of specialized skills for iOS and Swift development workflows.
 
 This repository contains a set of focused skills designed to assist with common iOS development tasks, from generating release notes to debugging apps and maintaining code quality.
 
-Install: place these skill folders under `$CODEX_HOME/skills/public` (or symlink this repo there).
+## Installation
 
-Optional: enable the pre-commit hook to keep `docs/skills.json` in sync:
-`git config core.hooksPath scripts/git-hooks`
+An automated script `link_skills.sh` is provided to symlink skills into the correct directory for your development agent.
+
+### Usage
+
+Run the script from the command line, providing the agent name and an optional path to this repository.
+
+```bash
+./link_skills.sh <agent_name> [path_to_skills_repo]
+```
+
+-   `<agent_name>`: The agent you want to install the skills for.
+-   `[path_to_skills_repo]`: The path to this `Skills` repository directory. If not provided, the script will use the current directory.
+
+### Supported Agents
+
+The following agents are supported:
+
+| Agent Name    | Command                 |
+|---------------|-------------------------|
+| Claude Code   | `claude-code`           |
+| Codex         | `codex`                 |
+| Cursor        | `cursor`                |
+| Windsurf      | `windsurf`              |
+
+### Examples
+
+**To link skills for Claude Code from within this directory:**
+```bash
+./link_skills.sh claude-code
+```
+
+**To link skills for Codex, providing the full path:**
+```bash
+./link_skills.sh codex ~/Developer/agents/Skills
+```
+
+After running the script, you may need to restart your agent for the new skills to be loaded.
+
+### Post-Installation Hook
+
+Optional: to keep the `docs/skills.json` file synchronized with changes, you can enable the pre-commit hook:
+```bash
+git config core.hooksPath scripts/git-hooks
+```
 
 ## Skills
 
